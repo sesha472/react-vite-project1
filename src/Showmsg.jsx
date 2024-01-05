@@ -12,7 +12,7 @@ const Showmsg = () => {
         {show ? <p>all the best </p>:null}
         
     <button onClick={()=>setshow(!show)}>show message</button>
-    <p>github test text</p>
+    
     
       
     </div>
