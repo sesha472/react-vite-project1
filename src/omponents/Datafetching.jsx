@@ -16,11 +16,13 @@ const reducerfunction = (prvstate, action) => {
 };
 
 const Datafetching = () => {
+  
   const intialStatestate = {
     loading: true,
     data: null,
     error: null,
   };
+  
   const [state, dispatch] = useReducer(reducerfunction, intialStatestate);
 
   const datagetter = async () => {
@@ -34,6 +36,8 @@ const Datafetching = () => {
     }
   };
 
+
+
   useEffect(() => {
     datagetter();
   }, []);
@@ -42,9 +46,9 @@ const Datafetching = () => {
 
     return (
           <div>
-        {state.loading && <p>LOADING ...</p>}
+        {state.loading && <p>LOADING...</p>}
         {state.data && state.data.map((item)=>{
-            return( <p>{item.name}</p>)
+            return( <p key={item.id} >{item.name}</p>)
         })}
         {state.error && <div>{alert("somthing erroe occured")}</div>}
       </div>

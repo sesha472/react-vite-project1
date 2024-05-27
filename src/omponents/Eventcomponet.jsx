@@ -16,10 +16,9 @@ const scrensizChangeHandler=()=>{
 useEffect(() => {
   window.addEventListener('resize',scrensizChangeHandler);
 
-  return () => {
-    window.removeEventListener('resize',scrensizChangeHandler);
-
-  }
+    return ()=>{
+      window.removeEventListener('resize',scrensizChangeHandler)
+    }
 }, [])
 
   return (
