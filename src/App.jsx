@@ -1,22 +1,13 @@
 import React, { useState } from 'react'
 import './App.css'
-import Firstcomponent from './omponents/Firstcomponent';
+import Exersize from './components/Exersize';
 
 
 function App() {
-   const [first, setfirst] = useState(null)
-      
-   const resevingData=(text)=>{
-     setfirst(text);
-   }
+   
   return (
     <div>
-       <p>{first}</p>
-
-      <Firstcomponent  fun={resevingData}/>
-
-    
-      
+        <Exersize/>  
     </div>
   );
 }

@@ -1,14 +1,10 @@
 
 
 import React, { useState } from "react"
-  const Firstcomponent=({fun})=>{
-    const [data, setdata] = useState('this is child component')
-    const ClickHandler=()=>{
-      fun(data);
-    }
+  const Firstcomponent=()=>{
+   
     return(
       <>
-       <button onClick={ClickHandler}>send</button>
       </>
     )
   }
