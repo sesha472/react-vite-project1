@@ -21,6 +21,7 @@ const Listitems = () => {
           newlist1[index].isChacked = !newlist1[index].isChacked ;
          setlist1(newlist1)
         }
+        
    
         const swapHanlder=()=>{
           const updatedlist1=[...list1]
