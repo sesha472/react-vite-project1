@@ -1,15 +1,10 @@
-import React from 'react'
-import './App.css'
-import Radiobuttons from './components/Radiobuttons';
-
-
+import React from "react";
+import "./App.css";
+import Practicehooks from './components/Practicehooks'
 function App() {
-   
-  return (
-    <div>
-   <Radiobuttons/>
-    </div>
-  );
+  return <div>
+   <Practicehooks/>
+  </div>;
 }
 
-export default App
+export default App;
