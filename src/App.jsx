@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.css";
-import Practicehooks from './components/Practicehooks'
+import Stopwatch from './components/Stopwatch'
 function App() {
   return <div>
-   <Practicehooks/>
+<Stopwatch/>
   </div>;
 }
 
